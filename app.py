@@ -63,7 +63,7 @@ if sel_rest_type != "All":
 
 # Utility safe plotting
 def safe_plot(fig, width_type='stretch'):
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width=width_type)
 
 # 1
 if choice == 1:
@@ -380,5 +380,6 @@ if choice == 6:
 
 # Footer
 st.sidebar.markdown("---")
+
 
 
