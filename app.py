@@ -62,7 +62,7 @@ if sel_rest_type != "All":
     df_view = df_view[df_view["restaurant_type"] == sel_rest_type]
 
 # Utility safe plotting
-def safe_plot(fig):
+def safe_plot(fig, width_type='stretch'):
     st.plotly_chart(fig, use_container_width=True)
 
 # 1
@@ -380,4 +380,5 @@ if choice == 6:
 
 # Footer
 st.sidebar.markdown("---")
+
 
